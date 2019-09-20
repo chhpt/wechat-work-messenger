@@ -14,4 +14,4 @@ jobs:
         uses: chhpt/wechat-work-messenger@master
         env:
           BOT_KEY: ${{ secrets.BOT_KEY }}
-          BOT_MESSAGE: 'Action Build Success'
+          POST_MESSAGE: 'Action Build Success'

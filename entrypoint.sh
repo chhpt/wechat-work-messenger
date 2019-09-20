@@ -11,7 +11,7 @@ if [ -z "$POST_MESSAGE" ]; then
   exit 1
 fi
 
-curl "http://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=$BOT_KEY" \
+curl "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=$BOT_KEY" \
   -H "Content-Type: application/json" \
   -d "
    {
