@@ -1,0 +1,17 @@
+name: Send Notification
+on:
+  push:
+    branches:
+      - master
+jobs:
+  notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Send Notification
+        uses: chhpt/wechat-work-messenger@master
+        env:
+          BOT_KEY: ${{ secrets.BOT_KEY }}
+          BOT_MESSAGE: 'Action Build Success'
