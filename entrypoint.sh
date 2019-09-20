@@ -7,7 +7,7 @@ if [ -z "$BOT_KEY" ]; then
 fi
 
 if [ -z "$POST_MESSAGE" ]; then
-  echo "Please set the post message."
+  echo "Please set the post markdown message."
   exit 1
 fi
 
