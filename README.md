@@ -12,8 +12,8 @@ This action wraps the [WeChat Work Bot Post Message API](https://work.weixin.qq.
 - name: Notify WeChat Work
   env:
     BOT_KEY: ${{ secrets.BOT_KEY }}
-    BOT_MESSAGE: 'Markdown Message'
-  uses: chhpt/wechat-work-messenger@master
+    POST_MESSAGE: 'Markdown Message'
+  uses: chhpt/wechat-work-messenger@v1.0.0
 ```
 
 ## License
